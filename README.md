@@ -102,5 +102,11 @@ body
     "radius": 5
 }
 
-6. Delete 
+6. Delete when you want to a Delete specific location
+Call the endpoint below with a Get HttpMethod,
+by a LocationName
 
+http://localhost:3000/locations/{LocationName}
+set the HttpMethod to Get
+
+You delete by LocationName 
