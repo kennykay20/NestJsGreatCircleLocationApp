@@ -6,7 +6,21 @@ Materials: Visual Studio Code, MongoDb database, and postman for testing the end
 Language: NestJs, built on Nodejs runtime environment,
 Make sure you install node_modules on the application before you run the application
 
+## Install node_modules
+$ npm install
+
 open cli command prompt and run : npm run start
+
+## Running the app
+# development
+$ npm run start
+
+# watch mode
+$ npm run start:dev
+
+# production mode
+$ npm run start:prod
+
 
 It uses locahost:3000 by default , when u open the localhost it display this message on your page "Hello Welcome to my Location" to show the application runs
 
