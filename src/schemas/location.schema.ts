@@ -19,10 +19,10 @@ export class Location {
     Phone: string;
     @Prop()
     ContactPerson: string;
-    // @Prop({
-    //     type[{longitudes:{type:Number}, latitudes:{type:Number}}]
-    // })
-    // Coordinates: { longitudes:number; latitudes: number;}[];
+    @Prop()
+    Latitude: number;
+    @Prop()
+    Longitude: number;
     
     
 }

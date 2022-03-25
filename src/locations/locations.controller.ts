@@ -2,6 +2,7 @@ import { Controller, Get, Post, Body, Put, Param, Delete } from '@nestjs/common'
 import { LocationsService } from './locations.service';
 import { CreateLocationDto } from './dto/create-location.dto';
 import { UpdateLocationDto } from './dto/update-location.dto';
+import { Coordinates } from './entities/coordinates.dto';
 
 @Controller('locations')
 export class LocationsController {
@@ -10,6 +11,11 @@ export class LocationsController {
   @Post()
   createLocation(@Body() createLocationDto: CreateLocationDto) {
     return this.locationsService.createLocatn(createLocationDto);
+  }
+
+  @Get('calculateDistance')
+  calculateDistance(@Body() cordinatedDto: Coordinates) {
+    return this.locationsService.calculateDistance(cordinatedDto);
   }
 
   @Get()
@@ -28,12 +34,7 @@ export class LocationsController {
   }
 
   @Delete(':locationName')
-  removeLocationByName(@Param('locationName') id: string) {
-    return this.locationsService.remove(+id);
-  }
-
-  @Post()
-  calculateDistance(@Body() createLocationDto: CreateLocationDto) {
-    return this.locationsService.createLocatn(createLocationDto);
+  removeLocationByName(@Param('locationName') LocationName: string) {
+    return this.locationsService.remove(LocationName);
   }
 }
