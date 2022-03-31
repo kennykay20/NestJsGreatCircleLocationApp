@@ -40,8 +40,8 @@ e.g
         "Website": "testing.com",
         "Phone": "07051234258",
         "ContactPerson": "Kenny",
-	"Latitude: "24",
-	"Longitude: "30"
+	"Latitude": "24",
+	"Longitude": "30"
 }
 Note: The Latitude and Longitude represent the Coordinates 
 
