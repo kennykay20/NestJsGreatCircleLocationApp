@@ -11,7 +11,8 @@ import { Coordinates } from './entities/coordinates.dto';
 export class LocationsService {
 
   constructor(
-    @InjectModel(Location.name) private locationModel: Model<LocationDocument>, 
+    @InjectModel(Location.name) 
+    private locationModel: Model<LocationDocument>, 
   ){}
 
 
